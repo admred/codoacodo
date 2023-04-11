@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    list-style:none;
+}
+
+header {
+    background-image: url(../assets/img/codigo_html.jpg);
+    height:100vh;
+    z-index:-1;
+
+}
+
+.transparency {
+    background: rgba(0,0,0,0.5);
+    z-index:10;
+    height:100vh;
+    width:100%;
+    position:absolute;
+}
+
+.navbar {
+    display:inline-block;
+    width:100%;
+    padding: auto 0;
+    background: #333333;
+    text-align:center;
+    vertical-align:middle;
+    position:fixed;
+    z-index:100;
+}
+
+.navbar-brand {
+    display:inline-block;
+}
+
+.navbar-links {
+    display:inline-block;
+    list-style:none;
+    width:80%;
+    height:auto;
+    vertical-align:30px;
+}
+
+.navbar-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:1.2rem;
+    margin-left:16px;
+    line-height:1.6em;
+}
+
+.navbar-links a:hover{
+    text-decoration:underline;
+}
+
+
+#compartir-tickets {
+    color:green;
+}
+
+header .title {
+    color:white;
+    text-align:center;
+}
+
+.section-title {
+    text-align:center;
+    margin: 50px 0px 20px 0px;
+    letter-spacing: 0.5em;
+    font-family: 'Verdana', sans-serif;
+    line-height:2em;
+}
+
+
+
+.row {
+    display:inline-block;
+    width:100%;
+    text-align:center;
+}
+
+.card {
+    display:inline-block;
+    width:300px;
+    border: 1px solid lightgray;
+    margin: 0 20px;
+    text-align:left;
+}
+
+.card-language {
+    display:block;
+    width:100%;
+    margin: 5px 0;
+    font-family: 'Arial',sans-serif;
+    font-weight: bold;
+    font-size:13px;
+
+}
+.html, .css, .js, .vue{
+    border-radius:2px;
+    padding: 5px;
+    margin: 5px 0;
+    margin-right: 2px;
+}
+.html {
+    background: lightgreen;
+}
+.css {
+    background: orange;
+}
+.js {
+    background: skyblue;
+}
+.vue {
+    background: cyan;
+}
+
+
+.card {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.card-image{
+    /*object-fit:cover; */  /* la imagenes son chicas, no funciona */
+    width:300px;
+}
+
+.card-author {
+    line-height:1.5em;
+}
+.card-title {
+
+    margin: 20px;
+}
+
+.card-body {
+    padding:0 20px 20px 20px;
+    font-size: 1rem;
+}
+
