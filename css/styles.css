@@ -9,13 +9,12 @@
 header {
     background-image: url(../assets/img/codigo_html.jpg);
     height:100vh;
-    z-index:-1;
-
+    background-size:cover;
 }
 
 .transparency {
     background: rgba(0,0,0,0.5);
-    z-index:10;
+    z-index:1;
     height:100vh;
     width:100%;
     position:absolute;
@@ -75,8 +74,6 @@ header .title {
     line-height:2em;
 }
 
-
-
 .row {
     display:inline-block;
     width:100%;
@@ -98,32 +95,37 @@ header .title {
     font-family: 'Arial',sans-serif;
     font-weight: bold;
     font-size:13px;
-
 }
+
 .html, .css, .js, .vue{
-    border-radius:2px;
-    padding: 5px;
+    border-radius:3px;
+    padding: 4px 6px;
     margin: 5px 0;
     margin-right: 2px;
 }
+
 .html {
     background: lightgreen;
 }
+
 .css {
     background: orange;
 }
+
 .js {
     background: skyblue;
 }
+
 .vue {
     background: cyan;
 }
 
-
 .card {
     border: 1px solid lightgray;
     border-radius: 5px;
+    margin:20px;
 }
+
 .card-image{
     /*object-fit:cover; */  /* la imagenes son chicas, no funciona */
     width:300px;
@@ -132,8 +134,8 @@ header .title {
 .card-author {
     line-height:1.5em;
 }
-.card-title {
 
+.card-title {
     margin: 20px;
 }
 
@@ -141,4 +143,3 @@ header .title {
     padding:0 20px 20px 20px;
     font-size: 1rem;
 }
-
