@@ -11,16 +11,28 @@
     <header>
         <div class="transparency">
             <nav class="navbar">
-                <img class="navbar-brand" src="assets/img/logo-CAC.webp" width="200px">
-                <div class="navbar-links" >
-                    <a href="">Programa</a>
-                    <a href="">Modalidad y Requisitos</a>
-                    <a href="">Inscripcion</a>
-                    <a href="">Entrega de Diplomas</a>
-                    <a id="compartir-tickets" href="">Compartir Tickets</a>
+                <div class="navbar-group">
+                    <img class="navbar-item" src="./assets/img/logo-CAC.webp" width="200px" alt="Casa de gobierno">
+                    <h2 class="navbar-item">Conf. Bs.As.</h2>
+                </div>
+                <div class="navbar-gap"></div>
+                <div class="navbar-group" >
+                    <a class="navbar-item" href="">Programa</a>
+                    <a class="navbar-item" href="">Modalidad y Requisitos</a>
+                    <a class="navbar-item" href="">Inscripcion</a>
+                    <a class="navbar-item" href="">Entrega de Diplomas</a>
+                    <a class="navbar-item" id="compartir-tickets" href="">Compartir Tickets</a>
                 </div>
             </nav>
-            <h1 class="title">Codo a Codo 4.0 - Proyecto Integrador</h1>
+            <div class="header-title">
+                <h2 class="title">Conf. Bs.As.</h2>
+                <p class="body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam debitis ullam voluptates fugiat nemo, excepturi, distinctio hic quisquam voluptatem quidem sequi! Odio odit aliquam, non molestias repudiandae fugit repellat at!</p>
+                <div class="action">
+                    <a href="" class="btn inline">Quiero ser Orador</a>
+                    <a href="" class="btn inline success">Comprar tickets</a>
+                </div>
+            </div>
+
         </div>
     </header>
 
@@ -58,13 +70,36 @@
                 </div>
             </div>
         </section>
-        <section>
-            <!-- FORUMULARIO ACA-->
+        <section class="encuentro">
+            <img class="lugar" src="./assets/img/honolulu.jpg" alt="Honolulu">
+            <div class="fecha">
+                <h4 class="title">Bs.As - Octubre</h4>
+                <p class="body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam debitis ullam voluptates fugiat nemo, excepturi, distinctio hic quisquam voluptatem quidem sequi! Odio odit aliquam, non molestias repudiandae fugit repellat at!</p>
+                <div class="action">
+                    <a href="" class="btn">Conocer mas</a>
+                </div>
+            </div>
+        </section>
+        <section class="formulario-section">
+            <div class="section-title">
+                <h4>CONVI&Eacute; EN ORADOR</h4>
+                <h1>ORADOR</h1>
+            </div>
+            <p>An&oacute;tate como orador para dar una charla ignite. Cu&eacute;ntanos de que quieres hablar!</p>
+            <form action="" method="POST" enctype="multipart/form-data" class="formulario">
+                <div class="row">
+                    <input type="text" name="nombre" class="input-inline" placeholder="Nombre">
+                    <input type="text" name="apellido" class="input-inline" placeholder="Apellido">
+                </div>
+                <textarea rows="10" name="tema" placeholder="Sobre qu&eacute; quieres hablar?"></textarea>
+                <small class="help-text">Recuerda incluir un titulo para tu charla</small>
+                <input type="submit" value="Enviar" class="btn full success ">
+            </form>
         </section>
     </main>
 
     <footer>
-        <small>Las imagenes de los oradores fueron tomadas de randomuser.me</small>
+        <small class="aviso">Las imagenes de los oradores fueron tomadas de randomuser.me</small>
     </footer>
 </body>
 </html>

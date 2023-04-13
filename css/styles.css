@@ -6,10 +6,18 @@
     list-style:none;
 }
 
+body {
+    width:100%;
+}
+a {
+    color:white;
+    text-decoration:none;
+}
+
 header {
-    background-image: url(../assets/img/codigo_html.jpg);
-    height:100vh;
+    background: url(../assets/img/codigo_html.jpg);
     background-size:cover;
+    height:100vh;
 }
 
 .transparency {
@@ -23,33 +31,35 @@ header {
 .navbar {
     display:inline-block;
     width:100%;
-    padding: auto 0;
-    background: #333333;
+    background: #333;
     text-align:center;
     vertical-align:middle;
     position:fixed;
-    z-index:100;
+    z-index:10;
 }
 
-.navbar-brand {
+.navbar-item{
+    display:inline-block;
+    color:white;
+    vertical-align:middle;
+    text-decoration:none;
+}
+
+.navbar-gap {
+    display:inline-block;
+    margin-right:20px;
+}
+
+.navbar-group {
     display:inline-block;
 }
 
-.navbar-links {
-    display:inline-block;
-    list-style:none;
-    width:80%;
-    height:auto;
-    vertical-align:30px;
-}
-
-.navbar-links a{
+.navbar-group a{
     color:white;
     text-decoration:none;
     font-weight:bold;
     font-size:1.2rem;
     margin-left:16px;
-    line-height:1.6em;
 }
 
 .navbar-links a:hover{
@@ -60,10 +70,50 @@ header {
 #compartir-tickets {
     color:green;
 }
-
-header .title {
+.header-title {
+    display:inline-block;
     color:white;
-    text-align:center;
+    text-align:right;
+    position:relative;
+    float:right;
+    width:500px;
+    top:200px;
+    right:10%;
+}
+
+.title {
+    font-size:40px;
+    margin:10px;
+}
+.inline {
+    display:inline-block;
+}
+.body {
+    font-size:30px;
+    margin:10px;
+}
+
+.action {
+    display:inline-block;
+    margin:10px;
+    font-size:30px;
+    font-weight:bold;
+}
+.btn {
+    padding:1rem 1.4rem;
+    font-size:1.5rem;
+    border:1px solid #999;
+    border-radius: 5px;
+}
+.btn:hover {
+    background:white;
+    color:black;
+
+}
+
+.success {
+    background:green;
+    color:white
 }
 
 .section-title {
@@ -142,4 +192,74 @@ header .title {
 .card-body {
     padding:0 20px 20px 20px;
     font-size: 1rem;
+}
+
+.encuentro {
+    white-space:nowrap;
+    background:#333;
+    margin-top:50px;
+}
+
+.lugar {
+    display:inline-block;
+    width:50%
+}
+
+.fecha {
+    white-space:normal;
+    display:inline-block;
+    width:50%;
+    vertical-align:top;
+    padding: 0 20px 0 20px;
+
+    color:white;
+}
+
+
+.formulario-section {
+    text-align:center;
+    width:600px;
+    text-align:center;
+    margin: 0 auto;
+}
+
+.formulario {
+    font-size: 1.3rem;
+}
+.formulario textarea {
+    width:400px;
+    font:inherit;
+    margin-top:5px;
+    width:100%;
+    padding: 3px;
+
+}
+.formulario .submit {
+    width:100%;
+    margin:10px 0;
+}
+.input-inline {
+    font:inherit;
+    position:relative;
+    width:296px;
+    padding: 3px;
+}
+
+
+.help-text {
+    display:block;
+    margin-bottom:10px;
+    font-size:10px;
+    text-align:left;
+    color:gray;
+}
+
+.full {
+    width:100%;
+}
+
+footer {
+    margin-top:50px;
+    height:100px;
+    background:rgb(29, 64, 84);
 }
