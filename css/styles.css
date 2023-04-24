@@ -9,6 +9,7 @@
 body {
     width:100%;
 }
+
 a {
     color:white;
     text-decoration:none;
@@ -62,6 +63,10 @@ header {
     margin-left:16px;
 }
 
+.navbar-group a:hover{
+    text-decoration:underline;
+}
+
 .navbar-links a:hover{
     text-decoration:underline;
 }
@@ -89,7 +94,7 @@ header {
     display:inline-block;
 }
 .body {
-    font-size:30px;
+    font-size:24px;
     margin:10px;
 }
 
@@ -100,10 +105,11 @@ header {
     font-weight:bold;
 }
 .btn {
-    padding:1rem 1.4rem;
+    padding:0.8rem 1.4rem;
     font-size:1.5rem;
     border:1px solid #999;
     border-radius: 5px;
+    margin-top:20px;
 }
 .btn:hover {
     background:white;
@@ -136,6 +142,10 @@ header {
     border: 1px solid lightgray;
     margin: 0 20px;
     text-align:left;
+    vertical-align:top;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin:20px;
 }
 
 .card-language {
@@ -147,34 +157,34 @@ header {
     font-size:13px;
 }
 
-.html, .css, .js, .vue{
+.tag{
     border-radius:3px;
     padding: 4px 6px;
     margin: 5px 0;
     margin-right: 2px;
-}
-
-.html {
-    background: lightgreen;
-}
-
-.css {
-    background: orange;
+    font-weight:bold;
 }
 
 .js {
-    background: skyblue;
+    background: yellow;
 }
 
-.vue {
-    background: cyan;
+.react {
+    background: teal;
+    color:white
 }
 
-.card {
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    margin:20px;
+.negocios {
+    background: gray;
+    color:white;
 }
+
+.startups {
+    background: darkorange;
+    color:white;
+}
+
+
 
 .card-image{
     /*object-fit:cover; */  /* la imagenes son chicas, no funciona */
@@ -225,7 +235,9 @@ header {
 
 .formulario {
     font-size: 1.3rem;
+    text-align:center;
 }
+
 .formulario textarea {
     width:400px;
     font:inherit;
@@ -259,7 +271,26 @@ header {
 }
 
 footer {
+    text-align:center;
     margin-top:50px;
-    height:100px;
     background:rgb(29, 64, 84);
+}
+
+.enlaces {
+    display:inline-block;
+    width:100%;
+    margin:2em 0;
+}
+
+.enlaces li{
+    display:inline-block;
+    margin: 0 1rem;
+}
+
+.enlaces li a:hover {
+    text-decoration:underline;
+}
+
+.copyright {
+    color:white;
 }
