@@ -233,6 +233,10 @@ header {
     margin: 0 auto;
 }
 
+.underline {
+    text-decoration:dotted;
+}
+
 .formulario {
     font-size: 1.3rem;
     text-align:center;
@@ -261,7 +265,7 @@ header {
 .help-text {
     display:block;
     margin-bottom:10px;
-    font-size:10px;
+    font-size:0.8rem;
     text-align:left;
     color:gray;
 }
@@ -294,3 +298,12 @@ footer {
 .copyright {
     color:white;
 }
+.whatsapp {
+    width:48px;
+    display:block;
+    z-index:2;
+    position:fixed;
+    bottom:40px;
+    right:40px;
+}
+
