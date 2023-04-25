@@ -63,11 +63,11 @@ header {
     justify-content:space-between;
     color:white;
     text-align:right;
-    /*position:relative;*/
+
     float:right;
     width:500px;
-    /*top:200px;*/
-    /*right:10%;*/
+
+    margin-right:10%;
     margin-top:200px;
 }
 
@@ -356,6 +356,7 @@ body {
     position:static;
     text-align:left;
     margin-top:40px;
+    margin-right:0;
 }
 .main-title{
     top:5%;
