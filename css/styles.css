@@ -6,53 +6,40 @@
     list-style:none;
 }
 
-body {
-    width:100%;
-}
 
 a {
     color:white;
     text-decoration:none;
 }
 
+
 header {
-    background: url(../assets/img/codigo_html.jpg);
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.9)) , url(../assets/img/codigo_html.jpg);
     background-size:cover;
     height:100vh;
 }
 
-.transparency {
-    background: rgba(0,0,0,0.5);
-    z-index:1;
-    height:100vh;
-    width:100%;
-    position:absolute;
-}
-
 .navbar {
-    display:inline-block;
-    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-content:center;
+    flex-wrap:wrap;
     background: #333;
-    text-align:center;
-    vertical-align:middle;
+    width:100%;
     position:fixed;
     z-index:10;
 }
 
 .navbar-item{
-    display:inline-block;
     color:white;
-    vertical-align:middle;
-    text-decoration:none;
-}
-
-.navbar-gap {
-    display:inline-block;
-    margin-right:20px;
+    margin: auto 0;
 }
 
 .navbar-group {
-    display:inline-block;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:1rem;
 }
 
 .navbar-group a{
@@ -60,47 +47,47 @@ header {
     text-decoration:none;
     font-weight:bold;
     font-size:1.2rem;
-    margin-left:16px;
+
 }
 
 .navbar-group a:hover{
     text-decoration:underline;
 }
 
-.navbar-links a:hover{
-    text-decoration:underline;
-}
-
-
 #compartir-tickets {
     color:green;
 }
-.header-title {
-    display:inline-block;
+.main {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
     color:white;
     text-align:right;
-    position:relative;
+    /*position:relative;*/
     float:right;
     width:500px;
-    top:200px;
-    right:10%;
+    /*top:200px;*/
+    /*right:10%;*/
+    margin-top:200px;
 }
 
-.title {
+.main-title {
     font-size:40px;
     margin:10px;
 }
-.inline {
-    display:inline-block;
-}
-.body {
+
+
+.main-body {
     font-size:24px;
     margin:10px;
 }
 
 .action {
-    display:inline-block;
-    margin:10px;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:1rem;
     font-size:30px;
     font-weight:bold;
 }
@@ -110,11 +97,12 @@ header {
     border:1px solid #999;
     border-radius: 5px;
     margin-top:20px;
+    text-align:center;
 }
 .btn:hover {
     background:white;
     color:black;
-
+    cursor:pointer;
 }
 
 .success {
@@ -123,45 +111,44 @@ header {
 }
 
 .section-title {
+    display:flex;
+    flex-direction:column;
     text-align:center;
     margin: 50px 0px 20px 0px;
     letter-spacing: 0.5em;
     font-family: 'Verdana', sans-serif;
     line-height:2em;
+    clear:both;
 }
 
 .row {
-    display:inline-block;
-    width:100%;
-    text-align:center;
+    display:flex;
+    align-items:stretch;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:1rem;
 }
 
 .card {
-    display:inline-block;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
     width:300px;
     border: 1px solid lightgray;
-    margin: 0 20px;
-    text-align:left;
-    vertical-align:top;
-    border: 1px solid lightgray;
     border-radius: 5px;
-    margin:20px;
+
 }
 
 .card-language {
-    display:block;
-    width:100%;
-    margin: 5px 0;
-    font-family: 'Arial',sans-serif;
+    display:flex;
     font-weight: bold;
     font-size:13px;
+    gap:10px;
 }
 
 .tag{
     border-radius:3px;
     padding: 4px 6px;
-    margin: 5px 0;
-    margin-right: 2px;
     font-weight:bold;
 }
 
@@ -184,10 +171,18 @@ header {
     color:white;
 }
 
+.section-oradores {
+    margin: 2rem 0;
+}
 
+.section-encuentro {
+    display:flex;
+    margin: 4rem 0;
+    gap:1px;
+}
 
 .card-image{
-    /*object-fit:cover; */  /* la imagenes son chicas, no funciona */
+    object-fit:cover;
     width:300px;
 }
 
@@ -204,61 +199,75 @@ header {
     font-size: 1rem;
 }
 
-.encuentro {
-    white-space:nowrap;
-    background:#333;
-    margin-top:50px;
-}
-
-.lugar {
-    display:inline-block;
-    width:50%
-}
-
-.fecha {
-    white-space:normal;
-    display:inline-block;
+.encuentro-lugar {
     width:50%;
-    vertical-align:top;
-    padding: 0 20px 0 20px;
+}
 
+.encuentro-title {
+    font-size:2rem;
+}
+
+.encuentro-body {
+    font-size:1.3rem;
+}
+.encuentro-button {
+    font-size:1.3rem;
+}
+
+.encuentro-fecha {
+    display:flex;
+    flex-direction:column;
     color:white;
+    gap:20px;
+    padding: 1rem;
+    background:#333;
 }
 
 
 .formulario-section {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
     text-align:center;
-    width:600px;
-    text-align:center;
-    margin: 0 auto;
 }
 
-.underline {
-    text-decoration:dotted;
+
+form {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    }
+
+.underline-dotted {
+    text-decoration: underline dotted;
 }
 
 .formulario {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:5px;
     font-size: 1.3rem;
-    text-align:center;
+    margin:5px 25%;
+}
+.formulario .row {
+    gap:5px;
 }
 
 .formulario textarea {
-    width:400px;
-    font:inherit;
-    margin-top:5px;
     width:100%;
-    padding: 3px;
-
+    font:inherit;
 }
+
 .formulario .submit {
     width:100%;
     margin:10px 0;
 }
+
 .input-inline {
     font:inherit;
-    position:relative;
-    width:296px;
     padding: 3px;
+    width:100%;
 }
 
 
@@ -275,20 +284,23 @@ header {
 }
 
 footer {
-    text-align:center;
-    margin-top:50px;
+    display:flex;
+    flex-direction:column;
     background:rgb(29, 64, 84);
+    gap:1rem;
+    width:100%;
 }
 
 .enlaces {
-    display:inline-block;
-    width:100%;
-    margin:2em 0;
+    display:flex;
+    justify-content:space-evenly;
+
 }
 
 .enlaces li{
     display:inline-block;
     margin: 0 1rem;
+    margin:2rem 0;
 }
 
 .enlaces li a:hover {
@@ -297,13 +309,90 @@ footer {
 
 .copyright {
     color:white;
+    text-align:center;
 }
+
 .whatsapp {
     width:48px;
-    display:block;
-    z-index:2;
-    position:fixed;
-    bottom:40px;
-    right:40px;
+    z-index:3;
+    position:sticky;
+    bottom:10px;
+    right:10px;
+    float:right;
 }
+
+@media screen and (max-width:600px){
+.navbar {
+    position:static;
+    flex-wrap:wrap;
+}
+.navbar-group {
+    flex-direction:column;
+}
+.row {
+    display: block;
+}
+
+.card-image {
+    display:block;
+    margin:0 auto;
+}
+
+
+body {
+    padding: 0 5px;
+
+}
+.section-encuentro {
+    flex-wrap:wrap;
+}
+
+.encuentro-lugar {
+    display:none;
+}
+
+.main {
+    width:100%;
+    position:static;
+    text-align:left;
+    margin-top:40px;
+}
+.main-title{
+    top:5%;
+    right:unset;
+    padding:5px;
+    font-size:24px;
+}
+.main-body {
+    font-size:18px;
+}
+.btn {
+    width:40%;
+    text-align:center;
+    font-size:18px;
+}
+
+.formulario{
+    margin:initial;
+}
+.card {
+    width:100%;
+    margin: 5px 0;
+    padding-top: 10px;
+}
+
+.card-body {
+    width:100%;
+}
+
+.btn {
+    width:100%;
+}
+.enlaces {
+    flex-direction:column;
+}
+.enlaces li{
+    margin: 1rem 0;
+}
+
 
