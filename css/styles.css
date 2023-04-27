@@ -135,7 +135,7 @@ header {
     align-items:stretch;
     width:300px;
     border: 1px solid lightgray;
-    border-radius: 5px;
+    border-radius: 10px;
 
 }
 
@@ -184,6 +184,7 @@ header {
 .card-image{
     object-fit:cover;
     width:300px;
+    border-radius: 10px 10px 0 0;
 }
 
 .card-author {
