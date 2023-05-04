@@ -2,62 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
     list-style:none;
 }
 
-
-a {
-    color:white;
-    text-decoration:none;
-}
-
-
 header {
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.9)) , url(../assets/img/codigo_html.jpg);
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,1)) , url(../assets/img/codigo_html.jpg);
     background-size:cover;
     height:100vh;
 }
 
-.navbar {
-    display:flex;
-    justify-content:space-around;
-    align-content:center;
-    flex-wrap:wrap;
-    background: #333;
-    width:100%;
-    position:fixed;
-    z-index:10;
+
+section{
+    margin-bottom:2rem;
 }
 
-.navbar-item{
-    color:white;
-    margin: auto 0;
-}
-
-.navbar-group {
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:1rem;
-}
-
-.navbar-group a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:1.2rem;
-
-}
-
-.navbar-group a:hover{
-    text-decoration:underline;
-}
-
-#compartir-tickets {
-    color:green;
-}
-.main {
+.portada {
     display:flex;
     flex-direction:column;
     justify-content:space-between;
@@ -71,44 +30,17 @@ header {
     margin-top:200px;
 }
 
-.main-title {
+.portada-title {
     font-size:40px;
     margin:10px;
 }
 
 
-.main-body {
+.portada-body {
     font-size:24px;
     margin:10px;
 }
 
-.action {
-
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:1rem;
-    font-size:30px;
-    font-weight:bold;
-}
-.btn {
-    padding:0.8rem 1.4rem;
-    font-size:1.5rem;
-    border:1px solid #999;
-    border-radius: 5px;
-    margin-top:20px;
-    text-align:center;
-}
-.btn:hover {
-    background:white;
-    color:black;
-    cursor:pointer;
-}
-
-.success {
-    background:green;
-    color:white
-}
 
 .section-title {
     display:flex;
@@ -121,106 +53,29 @@ header {
     clear:both;
 }
 
-.row {
-    display:flex;
-    justify-content:center;
-    gap:1rem;
-}
-
 .card {
-    display:flex;
-    flex-direction:column;
-    align-items:stretch;
-    width:300px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-
+    width: 22rem;
+    padding: 0;
 }
 
-.card-language {
-    display:flex;
-    font-weight: bold;
-    font-size:13px;
-    gap:10px;
+.card-title{
+    margin-left:0;
 }
 
-.tag{
-    border-radius:3px;
-    padding: 4px 6px;
-    font-weight:bold;
-}
-
-.js {
-    background: yellow;
-}
-
-.react {
-    background: teal;
-    color:white
-}
-
-.negocios {
-    background: gray;
+.encuentro-color {
+    background:#353a40;
     color:white;
-}
-
-.startups {
-    background: darkorange;
-    color:white;
-}
-
-.section-oradores {
-    margin: 2rem 0;
-}
-
-.section-encuentro {
-    display:flex;
-    margin: 4rem 0;
-    gap:1px;
-}
-
-.card-image{
-    object-fit:cover;
-    width:300px;
-    border-radius: 10px 10px 0 0;
-}
-
-.card-author {
-    line-height:1.5em;
-}
-
-.card-title {
-    margin: 20px;
-}
-
-.card-body {
-    padding:0 20px 20px 20px;
-    font-size: 1rem;
-}
-
-.encuentro-lugar {
-    width:50%;
-}
-
-.encuentro-title {
-    font-size:2rem;
+    border:1px solid lightgray;
 }
 
 .encuentro-body {
-    font-size:1.3rem;
-}
-.encuentro-button {
-    font-size:1.3rem;
+    padding:5px;
 }
 
-.encuentro-fecha {
-    display:flex;
-    flex-direction:column;
-    color:white;
-    gap:20px;
-    padding: 1rem;
-    background:#333;
+.encuentro-title {
+    line-height:3rem;
 }
+
 
 
 .formulario-section {
