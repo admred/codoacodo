@@ -1,18 +1,20 @@
-# Codo a Codo 4.0 - Ciudad de Buenos Aires (AR)
+# Codo a Codo - Conf. Bs. As.
 
+### Ver Página : https://admred.github.io/codoacodo/
 
-## Curso fullstak de Java 2023
+### Vistazo
 
-### Esto es el proyecto Integrador sobre una Landing Page propuesta en clase
+<p align="center">
+<img src="./assets/img/desktop-reducida.jpg" width="800" alt="Captura del sitio"/>
+</p>
 
-#### Lenguages abordados en este proyecto
+### Ver Código : https://github.com/admred/codoacodo
 
-- HTML
-- CSS
+### Tecnologías usadas
 
-
-#### Tecnologias usadas
-
-- Git (programa de consola)
-- Github (repositorio)
-- Github Pages (servicio)
+- Git
+- Github
+- Boostrap
+- Google fonts
+- HTML 5
+- CSS 3
