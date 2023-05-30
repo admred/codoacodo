@@ -1,0 +1,55 @@
+/* Segunta parte integrador */
+
+main {
+    max-width:900px;
+    margin: 0 auto;
+    }
+
+.categoria {
+    text-align:center;
+    }
+
+
+.categoria-titulo {
+    font-size:1.5rem;
+    margin: 1rem 0;
+    font-weight:bold;
+}
+.categoria-descripcion {
+    font-size:1.3rem;
+    margin: 1rem 0;
+}
+.categoria-descuento {
+    font-size:1.3rem;
+    font-weight:bold;
+    margin: 1rem 0;
+}
+.categoria-asterisco {
+    font-size:1rem;
+    margin: 1rem 0;
+    color:gray;
+}
+
+.card {
+    width:initial;
+    min-width:300px;
+    }
+
+
+#resultado{
+    background:#cce5ff;
+
+}
+
+.card {
+    width:initial;
+    border-radius:0;
+    border:5px solid dark;
+}
+
+
+header {
+    background:unset;
+    height:initial;
+    margin-bottom:4rem;
+}
