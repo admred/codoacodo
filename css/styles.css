@@ -18,7 +18,7 @@ section{
     opacity:0.7;
 }
 
-header {
+.carrusel {
   height:100vh;
   background:#000000;
 }
@@ -71,9 +71,11 @@ header {
     font-stretch:condensed;
 }
 
-.card {
+
+.card-container{
     width: 22rem;
     padding: 0;
+    margin-top:5px;
 }
 
 .card-title{
@@ -152,7 +154,7 @@ footer {
     height:unset;
 }
 
-header {
+.carrusel {
     background:white;
     height:unset;
 }
