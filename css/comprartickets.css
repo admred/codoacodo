@@ -12,7 +12,7 @@ main {
 
 .categoria-titulo {
     font-size:1.5rem;
-    margin: 1rem 0;
+    margin: 1.3rem 0;
     font-weight:bold;
 }
 .categoria-descripcion {
@@ -22,17 +22,18 @@ main {
 .categoria-descuento {
     font-size:1.3rem;
     font-weight:bold;
-    margin: 1rem 0;
+    margin: 1.3rem 0;
 }
 .categoria-asterisco {
     font-size:1rem;
-    margin: 1rem 0;
+    margin: 1.3rem 0;
     color:gray;
 }
 
 .card {
     width:initial;
     min-width:300px;
+    border-radius:0;
     }
 
 
